@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOpenTextFile));
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lvShowText = new System.Windows.Forms.ListView();
+            this.btnOpen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listView1
+            // lvShowText
             // 
-            this.listView1.BackColor = System.Drawing.Color.LightGray;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(40, 36);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(711, 225);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lvShowText.BackColor = System.Drawing.Color.LightGray;
+            this.lvShowText.HideSelection = false;
+            this.lvShowText.Location = new System.Drawing.Point(40, 36);
+            this.lvShowText.Name = "lvShowText";
+            this.lvShowText.Size = new System.Drawing.Size(711, 225);
+            this.lvShowText.TabIndex = 0;
+            this.lvShowText.UseCompatibleStateImageBehavior = false;
             // 
-            // button1
+            // btnOpen
             // 
-            this.button1.BackColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(321, 334);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 37);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnOpen.BackColor = System.Drawing.Color.LightGray;
+            this.btnOpen.Location = new System.Drawing.Point(321, 334);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(160, 37);
+            this.btnOpen.TabIndex = 1;
+            this.btnOpen.Text = "OPEN";
+            this.btnOpen.UseVisualStyleBackColor = false;
             // 
             // FrmOpenTextFile
             // 
@@ -60,8 +60,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.btnOpen);
+            this.Controls.Add(this.lvShowText);
             this.Name = "FrmOpenTextFile";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "Form1";
@@ -71,8 +71,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListView lvShowText;
+        private System.Windows.Forms.Button btnOpen;
     }
 }
 
