@@ -20,39 +20,43 @@ namespace Laboratory_Exercise_Reading_a_File
 
         private void btnOpen_Click(object sender, EventArgs e)
         {
-            lvShowText.Items.Clear();
-            openFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
-            openFileDialog1.Title = "Select a Text File to Read";
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            lvStudentData.Items.Clear();
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                try
+                openFileDialog.InitialDirectory = @"C:\";
+                openFileDialog.Title = "Browse Text Files";
+                openFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
+
+              
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    string filePath = openFileDialog1.FileName;
+                    string filePath = openFileDialog.FileName;
 
-                    string[] lines = File.ReadAllLines(filePath);
+                    try
+                    {
+                      
+                        string[] lines = File.ReadAllLines(filePath);
 
-                 
-                    foreach (string line in lines)
-                    {                     
-                        ListViewItem item = new ListViewItem(line);
+                        foreach (string line in lines)
+                        {
+                          
+                            lvStudentData.Items.Add(new ListViewItem(line));
+                        }
 
-                        
-                        lvShowText.Items.Add(item);
+                     
+                        MessageBox.Show("Successfully Uploaded!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                }
-                catch (IOException ex)
-                {
-                    
-                    MessageBox.Show("Error reading file: " + ex.Message, "File Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                catch (Exception ex)
-                {
-                  
-                    MessageBox.Show("An unexpected error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    catch (IOException ex)
+                    {
+                        MessageBox.Show("Error reading file: " + ex.Message, "File Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An unexpected error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }
     }
 }
-    
 

@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOpenTextFile));
-            this.lvShowText = new System.Windows.Forms.ListView();
+            this.lvStudentData = new System.Windows.Forms.ListView();
             this.btnOpen = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
-            // lvShowText
+            // lvStudentData
             // 
-            this.lvShowText.BackColor = System.Drawing.Color.LightGray;
-            this.lvShowText.HideSelection = false;
-            this.lvShowText.Location = new System.Drawing.Point(40, 36);
-            this.lvShowText.Name = "lvShowText";
-            this.lvShowText.Size = new System.Drawing.Size(711, 225);
-            this.lvShowText.TabIndex = 0;
-            this.lvShowText.UseCompatibleStateImageBehavior = false;
+            this.lvStudentData.BackColor = System.Drawing.Color.LightGray;
+            this.lvStudentData.HideSelection = false;
+            this.lvStudentData.Location = new System.Drawing.Point(40, 36);
+            this.lvStudentData.Name = "lvStudentData";
+            this.lvStudentData.Size = new System.Drawing.Size(711, 225);
+            this.lvStudentData.TabIndex = 0;
+            this.lvStudentData.UseCompatibleStateImageBehavior = false;
             // 
             // btnOpen
             // 
@@ -67,7 +67,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnOpen);
-            this.Controls.Add(this.lvShowText);
+            this.Controls.Add(this.lvStudentData);
             this.Name = "FrmOpenTextFile";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "Form1";
@@ -77,7 +77,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView lvShowText;
+        private System.Windows.Forms.ListView lvStudentData;
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
