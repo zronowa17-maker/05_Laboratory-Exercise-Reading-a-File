@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Laboratory_Exercise_Reading_a_File
 {
-    public partial class Form1 : Form
+    public partial class FrmOpenTextFile : Form
     {
-        public Form1()
+        public FrmOpenTextFile()
         {
             InitializeComponent();
         }

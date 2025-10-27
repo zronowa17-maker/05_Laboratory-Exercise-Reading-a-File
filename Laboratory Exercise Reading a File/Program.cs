@@ -16,7 +16,7 @@ namespace Laboratory_Exercise_Reading_a_File
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmOpenTextFile());
         }
     }
 }
