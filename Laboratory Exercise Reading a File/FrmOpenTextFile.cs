@@ -57,6 +57,15 @@ namespace Laboratory_Exercise_Reading_a_File
                 }
             }
         }
+
+        private void Record_Click(object sender, EventArgs e)
+        {
+            FrmStudentRecord studentRecordForm = new FrmStudentRecord();
+            studentRecordForm.Show();
+            Hide();
+
+
+        }
     }
 }
 

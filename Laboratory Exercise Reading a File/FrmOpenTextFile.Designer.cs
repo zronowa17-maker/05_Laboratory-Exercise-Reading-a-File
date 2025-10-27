@@ -32,6 +32,7 @@
             this.lvStudentData = new System.Windows.Forms.ListView();
             this.btnOpen = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.Record = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lvStudentData
@@ -59,6 +60,16 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // Record
+            // 
+            this.Record.Location = new System.Drawing.Point(321, 401);
+            this.Record.Name = "Record";
+            this.Record.Size = new System.Drawing.Size(160, 37);
+            this.Record.TabIndex = 2;
+            this.Record.Text = "Record";
+            this.Record.UseVisualStyleBackColor = true;
+            this.Record.Click += new System.EventHandler(this.Record_Click);
+            // 
             // FrmOpenTextFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -66,6 +77,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Record);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.lvStudentData);
             this.Name = "FrmOpenTextFile";
@@ -80,6 +92,7 @@
         private System.Windows.Forms.ListView lvStudentData;
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button Record;
     }
 }
 
