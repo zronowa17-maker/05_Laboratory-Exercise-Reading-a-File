@@ -16,5 +16,10 @@ namespace Laboratory_Exercise_Reading_a_File
         {
             InitializeComponent();
         }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

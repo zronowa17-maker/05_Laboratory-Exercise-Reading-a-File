@@ -53,6 +53,7 @@
             this.btnOpen.TabIndex = 1;
             this.btnOpen.Text = "OPEN";
             this.btnOpen.UseVisualStyleBackColor = false;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // openFileDialog1
             // 
